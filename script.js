@@ -56,7 +56,6 @@ switch(job){
   break;
   default:
   console.log("John does something else")
-
 }
 ///////////////////////////////////////
 // Lecture: if/else statements
@@ -75,7 +74,6 @@ var name1= "john";
 var age1 = 30;
 var  height1= age1 * 5;
 
-
 var name2= "Mike";
 var age2 = 30;
 var height2 = age2 * 5;
@@ -83,7 +81,6 @@ var height2 = age2 * 5;
 var name3= "Pinar";
 var age3 = 30;
 var height3 = age3 * 5;
-
 
 if(height1 > height2 && height1 > height3){
   console.log("the winner is " + name1 + "!");
@@ -120,7 +117,6 @@ console.log(sen);
 function yearsUntilRetirement(name, year){
   var age = calculateAge(year);
   var retirement = 65- age;
-
   var retire = document.createElement("h3");
 
   if(retirement >= 0){
@@ -142,7 +138,8 @@ yearsUntilRetirement("Max", 1948);
 ///////////////////////////////////////
 // Lecture: Arrays
 var names = ["sherry", "jordy", "Max"];
-var years = new Array(1990, 1998, 1995);
+var years = new Array(1990, 1998, 1995);// how to make an array with JS
+console.log(years);
 names.push("fun");//adds an index to the end of the array
 names.unshift("baby");//adds an index to beginning of the array
 names.pop();//deletes the last index
@@ -156,3 +153,27 @@ if(names.indexOf("Max") === -1){
 }else{
   console.log("yup! he is number " + names.indexOf("Max"));
 }
+
+/////////////////////////////////////
+//OBJECTS
+var john ={
+  name: "John",
+  lastname: "Smith",
+  yearOfBirth: 1990,
+  job: "teacher",
+  isMarried: false
+}
+console.log(john.lastname);// or
+console.log(john["lastname"]);
+john.lastname = "Miller";// how to manupilate the object
+john["job"] = "programmer"; // how to manupilate the object
+console.log(john);
+
+//how to create a new objects
+
+var jane = new Object();
+jane.name="Jane";
+jane["lastname"] = "Smith";
+jane["job"]= "Engineer";
+jane.isMarried = false;
+console.log(jane);
