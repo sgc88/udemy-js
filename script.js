@@ -177,3 +177,18 @@ jane["lastname"] = "Smith";
 jane["job"]= "Engineer";
 jane.isMarried = false;
 console.log(jane);
+
+//objects and methods
+
+var july = {
+  name:"Jane",
+  lastname: "Smith",
+  yearOfBirth: 1990,
+  job: "Developer",
+  isMarried: false,
+  family:["Max", "Bob", "Steven"],
+  calculateAge: function(){
+    return 2016 - this.yearOfBirth
+  }
+};
+console.log(july.calculateAge());
