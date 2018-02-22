@@ -143,3 +143,16 @@ yearsUntilRetirement("Max", 1948);
 // Lecture: Arrays
 var names = ["sherry", "jordy", "Max"];
 var years = new Array(1990, 1998, 1995);
+names.push("fun");//adds an index to the end of the array
+names.unshift("baby");//adds an index to beginning of the array
+names.pop();//deletes the last index
+names.shift();// dletes the first index
+var indexOf = names.indexOf("Max");
+console.log(names);
+console.log(indexOf);
+
+if(names.indexOf("Max") === -1){
+  console.log("yoiu are wrong");
+}else{
+  console.log("yup! he is number " + names.indexOf("Max"));
+}
