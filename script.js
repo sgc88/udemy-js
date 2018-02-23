@@ -204,8 +204,31 @@ var names= ["John", "Nese", "Max", "She"];
 for(var i = 0; i < names.length; i++){
   console.log(names[i]);
 }
+for(var i = 0; i < 5; i++){
+  if(i === 3){
+    break;
+
+  }
+    console.log(i);
+}
+
 
 //starts from last index in array
 for(var i = names.length -1; i >= 0; i--){
   console.log(names[i]);
+}
+
+for(var i = 4; i >= 0; i--){
+  if(i === 2){
+    continue;
+
+  }
+  console.log(i);
+}
+
+
+
+while(i < names.length){
+  console.log(names[i]);
+  i++;
 }
