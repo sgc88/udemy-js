@@ -188,7 +188,24 @@ var july = {
   isMarried: false,
   family:["Max", "Bob", "Steven"],
   calculateAge: function(){
-    return 2016 - this.yearOfBirth
+    this.age = 2016 - this.yearOfBirth;
   }
-};
-console.log(july.calculateAge());
+}
+
+july.calculateAge();
+
+console.log(july);
+
+//loops
+
+
+var names= ["John", "Nese", "Max", "She"];
+// starts from first index in array
+for(var i = 0; i < names.length; i++){
+  console.log(names[i]);
+}
+
+//starts from last index in array
+for(var i = names.length -1; i >= 0; i--){
+  console.log(names[i]);
+}
