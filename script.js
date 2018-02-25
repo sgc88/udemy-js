@@ -246,16 +246,11 @@ var age = 2018 - years[i];
 console.log(arr);
 for(var j= 0; j < arr.length; j++){
   var young = arr[j];
-  // var full1 =[];
-  // var full2 =[];
+
   if(young >=18){
     console.log("eligible to drive because you are " + young + " years old" );
-    // console.log(full1.push(young[j]));
-    // console.log(full2.push(true));
   }else{
     console.log("need to wait until 18 beacuse you are " + young + " years old");
-    // console.log(full1.push(young[j]));
-    // console.log(full2.push(false));
   }
 }
 
@@ -281,3 +276,5 @@ var printFullAge = function(years){
 }
 
 console.log(printFullAge(years));
+var ages2 = printFullAge([1990, 1926, 2010]);
+console.log(ages2);
