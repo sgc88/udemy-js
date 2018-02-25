@@ -232,3 +232,52 @@ while(i < names.length){
   console.log(names[i]);
   i++;
 }
+
+
+var years = [1990, 1980, 1996, 1984, 1967, 2003];
+
+var arr =[];
+for(var i= 0; i < years.length; i++){
+var age = 2018 - years[i];
+  arr.push(age);
+}
+
+
+console.log(arr);
+for(var j= 0; j < arr.length; j++){
+  var young = arr[j];
+  // var full1 =[];
+  // var full2 =[];
+  if(young >=18){
+    console.log("eligible to drive because you are " + young + " years old" );
+    // console.log(full1.push(young[j]));
+    // console.log(full2.push(true));
+  }else{
+    console.log("need to wait until 18 beacuse you are " + young + " years old");
+    // console.log(full1.push(young[j]));
+    // console.log(full2.push(false));
+  }
+}
+
+
+var printFullAge = function(years){
+  var years = [1990, 1980, 1996, 1984, 1967, 2003];
+  var full2=[];
+  var full1=[]
+  var isOld=true;
+  var isOld2 = false;
+  for(var i= 0; i < years.length; i++){
+  var age = 2018 - years[i];
+    if(age >=18){
+       full1.push(years[i]);
+      full2.push(isOld);
+    }else{
+      full1.push(years[i]);
+      full2.push(isOld2);
+    }
+  }
+  console.log(full1);
+  console.log(full2);
+}
+
+console.log(printFullAge(years));
